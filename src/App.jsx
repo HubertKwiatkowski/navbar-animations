@@ -1,9 +1,10 @@
+import {Navbar} from "./components/index.js";
 
 import './App.css'
 
 function App() {
   return (
-   <div>NavBar Animations</div>
+    <Navbar />
   )
 }
 

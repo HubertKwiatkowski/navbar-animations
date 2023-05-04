@@ -2,6 +2,7 @@ import "./Navbar.css"
 import {Burger, Close} from "../../icons/index.js"
 import {useEffect, useState} from "react";
 import classNames from "classnames";
+import {ProgressBar} from "../index.js";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -27,6 +28,7 @@ const Navbar = () => {
 
   return (
     <div className="header">
+      <ProgressBar />
       <div className="wrapper">
         <div className={headerTopClasses}>
           <h2>Code Better</h2>

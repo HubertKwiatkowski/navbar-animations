@@ -1,0 +1,11 @@
+.progress-background {
+	width: 100vw;
+	height: 3px;
+	background: #000;
+}
+
+.progress {
+	width: 5%;
+	height: 3px;
+	background: #F58A0C;
+}

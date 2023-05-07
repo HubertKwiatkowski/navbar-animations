@@ -6,11 +6,13 @@
 	width: 100vw;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
+	color: #000000;
+
 }
 
 .wrapper {
 	width: 320px;
-	padding: 0 12px;
+	/*padding: 0 12px;*/
 	margin: 0 auto;
 }
 
@@ -37,7 +39,6 @@
 }
 
 h2 {
-	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
@@ -68,7 +69,6 @@ h2 {
 }
 
 .subscribe-text {
-	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -143,8 +143,6 @@ h2 {
 		gap: 5px;
 	}
 }
-
-
 
 .close-menu {
 	margin-right: 30px;

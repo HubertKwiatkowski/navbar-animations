@@ -1,10 +1,14 @@
 import {Navbar} from "./components/index.js";
-
+import {Content} from "./container/index.js";
 import './App.css'
+
 
 function App() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <Content />
+    </div>
   )
 }
 

@@ -28,15 +28,17 @@ const Navbar = () => {
   const subscribeClasses = classNames('subscribe', {'mobile-menu': menuOpen})
 
   const [ lastYPos, setLastYPos ] = useState()
-  const [ shouldShowActions, setShouldShowActions ] = useState(false)
+  const [ shouldShowActions, setShouldShowActions ] = useState(true)
 
   useEffect(() => {
+    let lastYPos = window.scrollY;
     const handleScroll = () => {
       const yPos = window.scrollY
       const isScrollingUp = yPos < lastYPos
 
       setShouldShowActions(isScrollingUp)
-      setLastYPos((yPos))
+      setLastYPos(yPos => yPos);
+      lastYPos = yPos;
     }
 
     window.addEventListener("scroll", handleScroll, false)
@@ -60,7 +62,7 @@ const Navbar = () => {
             height: shouldShowActions ? 80 : 0,
             opacity: shouldShowActions ? 1 : 0
           }}
-          transition={{ duration: .3 }}
+          transition={{ opacity: {duration: .3} }}
 
         >
           <h2>Code Better</h2>

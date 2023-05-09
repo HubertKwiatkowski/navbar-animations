@@ -1,4 +1,5 @@
 .header {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6,13 +7,13 @@
 	width: 100vw;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 	margin: 0 auto;
+	background: #E7E5E2;
 	color: #000000;
-
+	z-index: 1;
 }
 
 .wrapper {
 	width: 320px;
-	/*padding: 0 12px;*/
 	margin: 0 auto;
 }
 
@@ -114,7 +115,6 @@ h2 {
 	line-height: 200%;
 	align-items: center;
 	color: #000000;
-	height: 60px;
 }
 
 .navbar li {

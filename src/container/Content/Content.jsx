@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../../components/index.js";
 import articlesData from "../../data/articles.js";
+import "./Content.css"
 
 const Content = () => {
   const sectionList = [];
@@ -19,7 +20,7 @@ const Content = () => {
     );
   });
 
-  return <div>{sectionList}</div>;
+  return <div className="section-wrapper">{sectionList}</div>;
 };
 
 export default Content;
